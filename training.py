@@ -80,7 +80,7 @@ train_y = np.array(training[:, len(words):], dtype=np.float32)
 # Crearemos una red neuronal secuencial
 model = Sequential()
 model.add(Dense(128, input_dim=len(train_x[0]), activation='relu'))
-model.add(Dropout(0.3))
+model.add(Dropout(0.7))
 model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.4))
 model.add(Dense(len(classes), activation='softmax'))
@@ -90,7 +90,7 @@ sgd = SGD(learning_rate=0.001, decay=1e-6, momentum=0.9, nesterov=True)
 
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
-train_process = model.fit(train_x, train_y, epochs=90000, batch_size=6, verbose=1)
+train_process = model.fit(train_x, train_y, epochs=1000000, batch_size=6, verbose=1)
 
 model.save("chatbot_model.h5", train_process)
 
