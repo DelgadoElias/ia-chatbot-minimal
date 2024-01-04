@@ -1,0 +1,43 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola",
+        "que tal",
+        "como estas",
+        "saludos",
+        "buen dia",
+        "buenos dias",
+        "buenas",
+        "buenas tardes"
+      ],
+      "responses": [
+        "Hola!",
+        "Buenos dias!",
+        "Buenas, ¿Qué tal?",
+        "Hola! ¿En qué puedo ayudarlo?"
+      ]
+    },
+    {
+      "tag": "nombre",
+      "patterns": [
+        "dime tu nombre",
+        "como es tu nombre",
+        "como te han llamado",
+        "con quien estoy hablando",
+        "nombre",
+        "llamado",
+        "identificate",
+        "como te llamas"
+      ],
+      "responses": [
+        "Soy el super bot de Cloud con Python",
+        "Me llamo Pipi y soy un bot de IA con Python",
+        "Me llamo Pipi de Python",
+        "Soy un chatbot de Python sin nombre aun",
+        "Soy Pipi, estoy entrenado para resolver tus consultas"
+      ]
+    }
+  ]
+}
